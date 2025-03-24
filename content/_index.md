@@ -3,17 +3,18 @@ title: Hextra Theme
 layout: hextra-home
 ---
 
-<!-- {{< hextra/hero-badge >}}
-  <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400"></div>
-  <span>Free, open source</span>
-  {{< icon name="arrow-circle-right" attributes="height=14" >}}
-{{< /hextra/hero-badge >}} -->
+
 {{< hextra/hero-container
   image="/images/platform/home.png"
   imageTitle="HAiQV AI INTRO"
   imageWidth="853"
-  class="hx-mt-2"
+  class="hx-mt-2 hx-animate-fadeInUp"
 >}}
+{{< hextra/hero-badge link="https://haiqv.ai/" >}}
+  <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400" ></div>
+  <span>Go, HAiQV AI</span>
+  {{< icon name="arrow-circle-right" attributes="height=14" >}}
+{{< /hextra/hero-badge >}}
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline >}}
@@ -35,7 +36,7 @@ layout: hextra-home
 <div class="hx-mt-6"></div>
 <div class="hx-mt-6"></div>
 
-{{< hextra/feature-grid >}}
+{{< hextra/feature-grid>}}
   {{< hextra/feature-card
     title="Centralized Management & Operations"
     icon="sparkles"
