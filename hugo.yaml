@@ -31,16 +31,17 @@ menu:
       weight: 4
       params:
         type: search
-    - name: GitHub
-      weight: 5
-      url: "https://github.com/jieunchoi-hw/haiqv_docs"
-      params:
-        icon: github
-    - name: Twitter
+    # - name: GitHub
+    #   weight: 5
+    #   url: "https://github.com/jieunchoi-hw/haiqv_docs"
+    #   params:
+    #     icon: github
+    - name: Login
       weight: 6
-      url: "https://twitter.com/"
+      url: "https://haiqv.ai/"
       params:
-        icon: x-twitter
+        type: button
+
 
 params:
   search:

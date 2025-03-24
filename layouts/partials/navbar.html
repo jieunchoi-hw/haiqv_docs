@@ -47,6 +47,15 @@
             {{- partial "utils/icon.html" (dict "name" .Params.icon "attributes" "height=24") -}}
             <span class="hx-sr-only">{{ or (T .Identifier) .Name | safeHTML }}</span>
           </a>
+        {{- else if eq .Params.type "button" -}}
+        <a
+          href="{{ $link }}"
+          {{ if $external }}target="_blank" rel="noreferrer"{{ end }}
+          class="hx-text-sm md:hx-inline-block hx-text-gray-600 dark:hx-text-gray-400 hx-bg-white hx-border hx-border-primary-500 hx-rounded-full hx-px-4 hx-py-1 hover:hx-bg-primary-50 hover:hx-text-gray-800 transition-all"
+        >
+          {{ or (T .Identifier) .Name | safeHTML }}
+        </a>
+        
         {{- else -}}
           {{- $active := or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .) -}}
           {{- $activeClass := cond $active "hx-font-medium" "hx-text-gray-600 hover:hx-text-gray-800 dark:hx-text-gray-400 dark:hover:hx-text-gray-200" -}}
