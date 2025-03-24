@@ -1,2 +1,5 @@
-div {
+:root {
+  --primary-hue: 28deg;
+  --primary-saturation: 89%;
+  --primary-lightness: 56%;
 }
