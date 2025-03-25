@@ -3,7 +3,7 @@
 {{- $footerSwitchesVisible := and $enableFooterSwitches (or hugo.IsMultilingual $displayThemeToggle) -}}
 {{- $copyrightSectionVisible := or (.Site.Params.footer.displayPoweredBy | default true) .Site.Params.footer.displayCopyright -}}
 
-{{- $copyright := (T "copyright") | default "© 2025 HAiQV AI." -}}
+{{- $copyright := (T "copyright") | default "© Hanwha Systems Co.,Ltd. All rights reserved." -}}
 {{- $poweredBy := (T "poweredBy") | default "Powered by HAiQV AI" -}}
 
 {{- $footerWidth := "hx-max-w-screen-xl" -}}
