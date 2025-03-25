@@ -20,7 +20,7 @@
             {{- end -}}
             {{ with .Params.image }}
               <img
-                src="{{ . | relURL }}"
+                src="{{ . }}"
                 alt="Thumbnail for {{ $.Title }}"
                 class="hx-w-full hx-rounded-md hx-mb-4 hx-object-cover hx-aspect-video dark:hx-opacity-90"
               />
