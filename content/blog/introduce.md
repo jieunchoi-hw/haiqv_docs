@@ -7,7 +7,7 @@ tags:
   - Model
   - Platform
 excludeSearch: false
-image: /images/blog/introduce_1.png
+image: images/blog/introduce_1.png
 ---
 From environment setup to model development, tracking, deployment, and serving — the HAiQV AI Platform streamlines and secures the entire AI lifecycle.
 

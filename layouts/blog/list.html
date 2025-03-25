@@ -20,8 +20,8 @@
             {{- end -}}
             {{ with .Params.image }}
               <img
-                src="{{ . | relURL }}"
-                alt="Thumbnail for {{ . | relURL }}"
+                src="{{ . | absURL }}"
+                alt="Thumbnail for {{ . | absURL }}"
                 class="hx-w-full hx-rounded-md hx-mb-4 hx-object-cover hx-aspect-video dark:hx-opacity-90"
               />
             {{ end }}
