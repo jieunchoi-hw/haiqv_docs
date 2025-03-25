@@ -1,5 +1,5 @@
 ---
-title: "Introducing the HAiQV AI Platform"
+title: "Resource Monitoring & Usage Statistics"
 date: 2025-03-24
 tags:
   - AI

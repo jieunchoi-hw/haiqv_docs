@@ -3,7 +3,7 @@ title: Blog
 type: blog
 ---
 
-<div style="text-align: center; margin-top: 1em;">
+<div style="text-align: center; margin: 1em;">
 {{< hextra/hero-badge link="index.xml" >}}
   <span>RSS Feed</span>
   {{< icon name="rss" attributes="height=14" >}}
