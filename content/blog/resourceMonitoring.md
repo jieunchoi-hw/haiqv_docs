@@ -8,7 +8,7 @@ tags:
   - Platform
   - Monitoring
 excludeSearch: false
-image: /images/blog/resource-monitoring-workspace.png
+image: images/blog/resource-monitoring-workspace.png
 ---
 How can administrators make the most of limited system resources?  
 The **HAiQV AI Platform** provides real-time resource monitoring and visualized usage statistics,  
