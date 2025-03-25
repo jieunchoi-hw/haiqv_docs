@@ -47,18 +47,19 @@
             {{- partial "utils/icon.html" (dict "name" .Params.icon "attributes" "height=24") -}}
             <span class="hx-sr-only">{{ or (T .Identifier) .Name | safeHTML }}</span>
           </a>
-        {{- else if eq .Params.type "button" -}}
-        <a
-          href="{{ $link }}"
-          {{ if $external }}target="_blank" rel="noreferrer"{{ end }}
-          class="not-prose hx-inline-flex hx-items-center hx-rounded-full hx-gap-2 hx-px-3 hx-py-1 hx-text-xs hx-text-gray-600 dark:hx-text-gray-100 hx-bg-white dark:hx-bg-neutral-800 dark:hx-border-neutral-700 hx-border hover:hx-border-gray-400 hover:hx-bg-primary-50 dark:hover:hx-text-gray-50 dark:hover:hx-border-gray-600 hx-transition-all hx-ease-in hx-duration-200"
-        >
-          {{ or (T .Identifier) .Name | safeHTML }}
-        </a>
         
         {{- else -}}
           {{- $active := or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .) -}}
           {{- $activeClass := cond $active "hx-font-medium" "hx-text-gray-600 hover:hx-text-gray-800 dark:hx-text-gray-400 dark:hover:hx-text-gray-200" -}}
+          {{- if eq .Params.type "button" -}}
+          <a
+            href="{{ $link }}"
+            {{ if $external }}target="_blank" rel="noreferrer"{{ end }}
+            class="hx-py-1 hx-gap-2 hx-ml-4 hx-text-sm dark:hx-text-gray-100 hx-bg-white dark:hx-bg-neutral-800 dark:hx-border-neutral-700 hx-border hover:hx-border-gray-400 hover:hx-bg-primary-50 dark:hover:hx-text-gray-50 dark:hover:hx-border-gray-600 hx-transition-all hx-ease-in hx-duration-200 hx-rounded-full hx-gap-2 hx-px-3 hx-text-sm contrast-more:hx-text-gray-700 contrast-more:dark:hx-text-gray-100 hx-relative -hx-ml-2 hx-hidden hx-whitespace-nowrap hx-p-2 md:hx-inline-block {{ $activeClass }}"
+          >
+            {{ or (T .Identifier) .Name | safeHTML }}
+          </a>
+          {{- else -}}
           <a
             title="{{ or (T .Identifier) .Name | safeHTML }}"
             href="{{ $link }}"
@@ -67,6 +68,7 @@
           >
             <span class="hx-text-center">{{ or (T .Identifier) .Name | safeHTML }}</span>
           </a>
+          {{- end -}}
         {{- end -}}
       {{- end -}}
     {{- end -}}

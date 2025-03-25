@@ -42,7 +42,15 @@
   {{/* Hide theme switch when sidebar is disabled */}}
   {{ $switchesClass := cond $disableSidebar "md:hx-hidden" "" -}}
   {{ $displayThemeToggle := (site.Params.theme.displayToggle | default true) -}}
-
+  {{/* Login Button */}}
+    <a
+      href="https://haiqv.ai/"
+      target="_blank"
+      rel="noreferrer"
+      class="hx-inline-block hx-text-center hx-px-4 hx-py-2 hx-mx-4 hx-text-sm hx-rounded-full hx-border hx-mb-4 hx-bg-white dark:hx-bg-neutral-800 dark:hx-border-primary-500 dark:hx-text-primary-400 hover:hx-bg-primary-50 dark:hover:hx-bg-primary-500/10 hx-transition-all"
+    >
+      Login
+    </a>
   {{ if or hugo.IsMultilingual $displayThemeToggle }}
     <div class="{{ $switchesClass }} {{ with hugo.IsMultilingual }}hx-justify-end{{ end }} hx-sticky hx-bottom-0 hx-bg-white dark:hx-bg-dark hx-mx-4 hx-py-4 hx-shadow-[0_-12px_16px_#fff] hx-flex hx-items-center hx-gap-2 dark:hx-border-neutral-800 dark:hx-shadow-[0_-12px_16px_#111] contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-shadow-none hx-border-t" data-toggle-animation="show">
       {{- with hugo.IsMultilingual -}}
