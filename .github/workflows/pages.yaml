@@ -57,7 +57,7 @@ jobs:
         run: |
           hugo \
             --gc --minify \
-            --baseURL "https://jieunchoi-hw.github.io/"
+            --baseURL "https://jieunchoi-hw.github.io/haiqv_docs/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
