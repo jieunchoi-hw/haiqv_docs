@@ -2,13 +2,7 @@
 title: HAiQV AI란?
 layout: hextra-home
 ---
-
-{{< hextra/hero-container
-  image="/images/platform/home.png"
-  imageTitle="HAiQV AI 소개"
-  imageWidth="853"
-  class="hx-mt-2 hx-animate-fadeInUp"
->}}
+{{< hextra/hero-container style="text-align:center">}}
 {{< hextra/hero-badge link="https://haiqv.ai/" >}}
   <div class="hx-w-2 hx-h-2 hx-rounded-full hx-bg-primary-400" ></div>
   <span>HAiQV AI 바로가기</span>
@@ -17,21 +11,34 @@ layout: hextra-home
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline>}}
-  AI/ML 전 과정을 한번에,
-  <br class="sm:hx-block hx-hidden" /> 통합 AI 플랫폼
+  AI/ML 연구부터 모델 배포,테스트까지 한 번에,
+  <br class="sm:hx-block hx-hidden" /> 컨테이너기반의 AI 통합 플랫폼
 {{< /hextra/hero-headline >}}
 </div>
 
-<div class="hx-mb-12">
+<div class="hx-mb-6">
 {{< hextra/hero-subtitle >}}  
   독립된 개발 환경에서 인프라 자원의 활용성을 강화하고 <br class="sm:hx-block hx-hidden"> AI/ML 의 전체 라이프사이클을 간편하게 관리하는 End-to-End 솔루션
 {{< /hextra/hero-subtitle >}}
 </div>
 
-<div class="hx-mt-6 hx-mb-6">
+<div class="hx-mt-6 hx-mb-4">
 {{< hextra/hero-button text="시작하기" link="docs" >}}
 </div>
+{{< /hextra/hero-container>}}
+<div>
+</div>
+
+
+{{< hextra/hero-container
+  image="/images/platform/home.png"
+  imageTitle="HAiQV AI 소개"
+  imageWidth="853"
+  cols="1"
+  class="hx-mt-2 hx-animate-fadeInUp landing-background"
+>}}
 {{< /hextra/hero-container >}}
+
 
 <div class="hx-mt-6"></div>
 <div class="hx-mt-6"></div>
