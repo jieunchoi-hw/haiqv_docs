@@ -11,7 +11,7 @@ layout: hextra-home
 
 <div class="hx-mt-6 hx-mb-6">
 {{< hextra/hero-headline>}}
-  AI/ML 연구부터 모델 배포,테스트까지 한 번에,
+  AI/ML 연구부터 모델 배포, 테스트까지 한 번에
   <br class="sm:hx-block hx-hidden" /> 컨테이너기반의 AI 통합 플랫폼
 {{< /hextra/hero-headline >}}
 </div>
