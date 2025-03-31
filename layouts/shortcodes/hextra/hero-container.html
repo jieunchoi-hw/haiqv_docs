@@ -25,7 +25,7 @@
     {{ .Inner }}
   </div>
   {{- with $image }}
-  <div class="hx-mx-auto">
+  <div class="hx-shadow-lg hx-mx-auto hx-p-2 image-cover" >
     <a
       {{ with $imageLink }}href="{{ $href }}" {{ with $imageLinkExternal }} target="_blank" rel="noreferrer"{{ end }}{{ end }}
       {{ with $imageStyle }}style="{{ . | safeCSS }}"{{ end }}

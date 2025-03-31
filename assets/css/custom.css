@@ -28,3 +28,8 @@ body {
 .hx-animate-fadeInUp {
   animation: fadeInUp 0.8s ease-out forwards;
 }
+
+.image-cover{
+  background: linear-gradient(0deg, rgba(243,116,33,1) 0%, rgba(255,255,255,0.6166841736694677) 50%);
+  border-radius: 0.75rem;
+}
