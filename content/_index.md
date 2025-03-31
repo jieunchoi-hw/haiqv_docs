@@ -10,7 +10,7 @@ layout: hextra-home
 {{< /hextra/hero-badge >}}
 
 <div class="hx-mt-6 hx-mb-6">
-{{< hextra/hero-headline>}}
+{{< hextra/hero-headline style="line-height: 1.15">}}
   AI/ML 연구부터 모델 배포, 테스트까지 한 번에
   <br class="sm:hx-block hx-hidden" /> 컨테이너기반의 AI 통합 플랫폼
 {{< /hextra/hero-headline >}}
@@ -43,43 +43,45 @@ layout: hextra-home
 <div class="hx-mt-6"></div>
 <div class="hx-mt-6"></div>
 
-{{< hextra/feature-grid>}}
+
+{{< hextra/hero-container class="hx-p-6" style=" background: radial-gradient(ellipse at 50% 80%, rgba(243,198,75,0.15), hsla(0,0%,100%,0)); ">}}
+
+<div  style="text-align:center;">
+  {{< hextra/hero-headline style="opacity: 0.1" >}}
+  <span >All About HAiQV AI</span>
+  {{< /hextra/hero-headline >}}
+</div>
+
+{{< hextra/feature-grid cols="4">}}
   {{< hextra/feature-card
-    title="중앙 집중식 관리 및 운영"
-    icon="sparkles"
-    subtitle="효율적인 AI 운영을 위한 사용자 접근 제어 및 리소스 모니터링."
-    style="background: radial-gradient(ellipse at 50% 80%, rgba(241,130,47,0.15), hsla(0,0%,100%,0));"
+    title="모두를 위한 플랫폼"
+    icon="collection"
+    subtitle="개발자, 경영진, 운영조직 모두가 사용하는 플랫폼"
+    style="background: #FEFCF7"
   >}}
   {{< hextra/feature-card
-    title="최적화된 ML 개발 환경"
-    icon="sparkles"
-    subtitle="확장 가능하고 격리된 워크스페이스로 매끄러운 ML 개발 지원."
-    style="background: radial-gradient(ellipse at 50% 80%, rgba(241,166,63,0.15), hsla(0,0%,100%,0));"
+    title="MLOps 실행"
+    icon="template"
+    subtitle="MLOps의 전과정을 플랫폼에서 한번에"
+    style="background: #FEFCF7"
   >}}
   {{< hextra/feature-card
-    title="강력한 데이터 관리"
-    icon="sparkles"
-    subtitle="다양한 데이터 소스를 유연하게 통합 및 관리."
+    title="모델 개발 편의도구"
+    icon="code"
+    subtitle="웹기반 개발환경과 더불어 다양한 툴 제공"
     imageClass="hx-top-[40%] hx-left-[36px] hx-w-[110%] sm:hx-w-[110%] dark:hx-opacity-80"
-    style="background: radial-gradient(ellipse at 50% 80%, rgba(243,198,75,0.15), hsla(0,0%,100%,0));"
+    style="background: #FEFCF7"
   >}}
   {{< hextra/feature-card
-    title="포괄적인 모델 추적 및 인사이트"
-    icon="sparkles"
-    subtitle="모델 이력 전반을 추적하고 구조화된 인사이트 제공."
+    title="모니터링 및 통계"
+    icon="presentation-chart-line"
+    subtitle="한정된 자원에 대한 효율적인 사용을 위한 통계 정보 제공"
     imageClass="hx-top-[40%] hx-left-[36px] hx-w-[110%] sm:hx-w-[110%] dark:hx-opacity-80"
-    style="background: radial-gradient(ellipse at 50% 80%, rgba(148,200,61,0.15), hsla(0,0%,100%,0));"
+    style="background: #FEFCF7"
   >}}
-  {{< hextra/feature-card
-    title="자동화된 모델 배포 및 거버넌스"
-    icon="sparkles"
-    subtitle="일관되고 안전한 배포를 위한 파이프라인 및 정책 자동화."
-    style="background: radial-gradient(ellipse at 50% 80%, rgba(77,168,163,0.15), hsla(0,0%,100%,0));"
-  >}}
-  {{< hextra/feature-card
-    title="현실 세계를 위한 확장형 모델 서빙"
-    icon="sparkles"
-    subtitle="어떤 환경에서도 고성능 AI API를 손쉽게 배포."
-    style="background: radial-gradient(ellipse at 50% 80%, rgba(62,124,177,0.15), hsla(0,0%,100%,0));"
-  >}}
+
 {{< /hextra/feature-grid >}}
+
+{{< /hextra/hero-container>}}
+
+<div class="hx-mt-6"></div>

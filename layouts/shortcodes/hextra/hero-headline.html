@@ -3,7 +3,6 @@
 
 <h1
   class="not-prose hx-mt-1 hx-text-4xl hx-font-bold hx-tracking-tighter md:hx-text-5xl hx-py-2 hx-bg-clip-text hx-text-transparent hx-bg-gradient-to-r hx-from-gray-900 hx-to-gray-600 dark:hx-from-gray-100 dark:hx-to-gray-400"
-  style="line-height: 1.15;"
   {{ with $style }}style="{{ . | safeCSS }}"{{ end }}
 >
   {{ .Inner | markdownify }}
